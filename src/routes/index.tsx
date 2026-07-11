@@ -4,13 +4,18 @@ import { useEffect, useRef, type ReactNode } from "react";
 import { FlameSeal } from "@/components/FlameSeal";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
 
-import ribsAsset from "@/assets/ribs.asset.json";
-import ambienceAsset from "@/assets/ambience.asset.json";
-import pitmasterAsset from "@/assets/pitmaster.asset.json";
-import picanhaAsset from "@/assets/picanha.asset.json";
+import ribsUrl from "@/assets/ribs.jpg";
+import ambienceUrl from "@/assets/ambience.jpg";
+import pitmasterUrl from "@/assets/pitmaster.jpg";
+import picanhaUrl from "@/assets/picanha.jpg";
 import porchettaAsset from "@/assets/porchetta.asset.json";
 import arrozAsset from "@/assets/arroz.asset.json";
 import anchoAsset from "@/assets/ancho.asset.json";
+
+const ribsAsset = { url: ribsUrl };
+const ambienceAsset = { url: ambienceUrl };
+const pitmasterAsset = { url: pitmasterUrl };
+const picanhaAsset = { url: picanhaUrl };
 
 const RESERVA_URL = "https://bit.ly/tocadocobra-reservas";
 const CARDAPIO_URL = "https://www.dguests.com/tocadocobra";
