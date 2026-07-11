@@ -11,6 +11,7 @@ import picanhaUrl from "@/assets/picanha.jpg";
 import porchettaAsset from "@/assets/porchetta.asset.json";
 import arrozAsset from "@/assets/arroz.asset.json";
 import anchoAsset from "@/assets/ancho.asset.json";
+import heroVideoAsset from "@/assets/hero.mp4.asset.json";
 
 const ribsAsset = { url: ribsUrl };
 const ambienceAsset = { url: ambienceUrl };
@@ -188,12 +189,14 @@ function Hero() {
               aria-hidden="true"
             />
             <div className="overflow-hidden rounded-xl border border-border shadow-2xl">
-              <img
-                src={ribsAsset.url}
-                alt="Costela de boi finalizada na brasa com fumaça subindo"
-                width={1400}
-                height={1600}
-                fetchPriority="high"
+              <video
+                src={heroVideoAsset.url}
+                poster={ribsAsset.url}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
                 className="h-[420px] w-full object-cover sm:h-[520px] md:h-[600px]"
               />
             </div>
