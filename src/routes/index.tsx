@@ -11,7 +11,6 @@ import picanhaUrl from "@/assets/picanha.jpg";
 import porchettaAsset from "@/assets/porchetta.asset.json";
 import arrozAsset from "@/assets/arroz.asset.json";
 import anchoAsset from "@/assets/ancho.asset.json";
-import heroVideoAsset from "@/assets/hero.mp4.asset.json";
 
 const ribsAsset = { url: ribsUrl };
 const ambienceAsset = { url: ambienceUrl };
@@ -190,7 +189,7 @@ function Hero() {
             />
             <div className="overflow-hidden rounded-xl border border-border shadow-2xl">
               <video
-                src={heroVideoAsset.url}
+                src="/videos/hero.mp4"
                 poster={ribsAsset.url}
                 autoPlay
                 muted
